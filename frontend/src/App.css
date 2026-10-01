@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f9fa;
+  color: #111;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.navbar {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8%;
+  background: white;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar a {
+  color: #222;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.login-btn {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 11px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 620px;
+  padding: 70px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+.small-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #666;
+}
+
+.hero h1 {
+  font-size: 68px;
+  line-height: 1;
+  margin: 20px 0;
+}
+
+.description {
+  font-size: 19px;
+  color: #666;
+  margin-bottom: 35px;
+}
+
+.booking-card {
+  background: white;
+  max-width: 500px;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.booking-card h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 0 16px;
+}
+
+.input-group input {
+  flex: 1;
+  margin-left: 13px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+}
+
+.pickup-dot,
+.destination-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pickup-dot {
+  background: #18a558;
+}
+
+.destination-dot {
+  background: #e63946;
+}
+
+.route-line {
+  height: 16px;
+  border-left: 2px dashed #bbb;
+  margin-left: 21px;
+}
+
+.search-btn {
+  width: 100%;
+  padding: 16px;
+  margin-top: 22px;
+  border: none;
+  border-radius: 10px;
+  background: #111;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #444;
+}
+
+.hero-right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.map-wrapper {
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.ride-types {
+  padding: 60px 8%;
+  background: #f8f9fa;
+}
+
+.ride-container {
+  display: flex;
+  gap: 25px;
+}
+
+.ride-card {
+  flex: 1;
+  padding: 30px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+.location-search {
+  position: relative;
+  width: 100%;
+}
+
+.suggestions {
+  position: absolute;
+  top: 62px;
+  left: 0;
+  right: 0;
+
+  background: white;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+  max-height: 250px;
+  overflow-y: auto;
+
+  z-index: 9999;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  padding: 13px;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.suggestion-item:hover {
+  background: #f4f4f4;
+}
+
+.suggestion-icon {
+  font-size: 17px;
+}
+
+.search-status {
+  font-size: 12px;
+  color: #777;
+  margin-top: 5px;
+}
